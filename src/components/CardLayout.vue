@@ -1,10 +1,12 @@
 <template>
-  <div class="bg-gray mb-4 p-2">
-      <g-image class="float-none"
+  <div class="mb-4 ">
+    <a :href="painting.url_l" target="_blank">
+      <g-image class="mx-auto bg-gray p-2"
         v-if="painting.url_s"
         :src="painting.url_s"
         :alt="painting.title"
       />
+    </a>
   </div>
 </template>
 

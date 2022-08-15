@@ -20,7 +20,7 @@ module.exports = function (api) {
         user_id: process.env.FLICKR_USERID,
         method: `flickr.photosets.getPhotos`,
         photoset_id: `72157698726198434`,
-        extras: 'url_s, url_m, url_l',
+        extras: 'url_s, url_m, url_l, tags, machine_tags',
         page: 1,
         format: 'json',
         nojsoncallback: 1,
@@ -40,14 +40,32 @@ module.exports = function (api) {
           title: p.title,
           url_s: p.url_s,
           url_m: p.url_m,
-          url_l: p.url_l
+          url_l: p.url_l,
+          tags: p.tags,
+          mtags: p.machine_tags
         })
       }
     })
 
   })
 
+  // make album pages for each flickr type
+  // they're all in one photoset tagged separately
   api.createPages(({ createPage }) => {
-    // Use the Pages API here: https://gridsome.org/docs/pages-api/
+    createPage({
+      path: `/`,
+      component: './src/templates/AlbumPage.vue',
+      context: {
+          imageTag: 'spiritbird'
+      }
+    })
+
+    createPage({
+      path: `/Land`,
+      component: './src/templates/AlbumPage.vue',
+      context: {
+          imageTag: 'spiritland'
+      }
+    })
   })
 }

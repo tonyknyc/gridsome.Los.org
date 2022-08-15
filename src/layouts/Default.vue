@@ -1,17 +1,14 @@
 <template>
-  <div>
+  <div class="h-screen bg-gray-dark text-white">
     <transition name="fade" appear>
       <div>
         <slot />
       </div>
     </transition>
-    <footer>
-      <span>
-        Copyright © {{ new Date().getFullYear() }}.
-      </span>
-      <span>
-        Powered by
-        <a href="//gridsome.org">Gridsome</a>
+    <footer class="bg-gray-dark absolute bottom-0">
+      <span class="text-gray text-sm self-center">
+        Copyright © {{ new Date().getFullYear() }} 
+        Tony Kirman, who built it with <a href="//gridsome.org" target="_blank">Gridsome</a> & <a href="//tailwindcss.com/" target="_blank">Tailwindcss</a>
       </span>
     </footer>
   </div>
