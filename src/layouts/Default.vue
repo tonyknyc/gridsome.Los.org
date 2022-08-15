@@ -1,7 +1,7 @@
 <template>
-  <div class="h-screen bg-gray-dark text-white">
+  <div class="h-screen text-white bg-gray-dark">
     <transition name="fade" appear>
-      <div>
+      <div class="pl-5">
         <slot />
       </div>
     </transition>

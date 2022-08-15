@@ -1,8 +1,8 @@
 <template>
-<nav class="bg-gray-dark border-gray-200 px-2 sm:px-4 py-2.5">
+<nav class="font-sans md:font-serif bg-gray-dark border-gray-200 px-2 sm:px-4 py-2.5">
   <div class="container flex justify-between items-center mx-auto">
     <div class="content-start flex items-stretch">
-      <g-image src="../assets/images/favicon.png" width="50" />
+      <g-image src="../assets/images/favicon.png" width="50" class="pr-5"/>
       <span class="self-center text-xl text-white font-semibold whitespace-nowrap">Los.org</span>
     </div>
     
@@ -13,14 +13,14 @@
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
       <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
-          <a href="/" class="block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Birds</a>
+          <a href="/" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0">Birds</a>
         </li>
         <!-- aria-current="page" -->
         <li>
-          <a href="/Land" class="block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Landscapes</a>
+          <a href="/Land" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0">Landscapes</a>
         </li>
         <li>
-          <a href="/About" class="block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+          <a href="/About" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0">About Me</a>
         </li>
 
       </ul>
