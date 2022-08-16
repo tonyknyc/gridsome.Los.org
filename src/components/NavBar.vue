@@ -1,64 +1,57 @@
 <template>
-<nav class="font-sans md:font-serif bg-gray-dark border-gray-200 px-2 sm:px-4 py-2.5">
-  <div class="container flex justify-between items-center mx-auto">
-    <div class="content-start flex items-stretch">
-      <g-image src="../assets/images/favicon.png" width="50" class="pr-5"/>
-      <span class="self-center text-xl text-white font-semibold whitespace-nowrap">Los.org</span>
-    </div>
-    
-    <button id="nav-button" data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+  <nav class="relative flex flex-wrap items-center justify-between px-2 py-3 bg-gray-dark mb-3">
+    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+      <div class="w-full  flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
+        <div class="flex inline-block mr-4 py-2">
+          <g-image src="../assets/images/favicon.png" width="50" class="pr-5" />
+          <span class="self-center text-xl text-white font-semibold whitespace-nowrap">Los.org</span>
+        </div>
+        <button
+          class="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+          type="button" v-on:click="toggleNavbar()">
       <span class="sr-only">Open main menu</span>
       <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-    </button>
-    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a href="/" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0">Birds</a>
-        </li>
-        <!-- aria-current="page" -->
-        <li>
-          <a href="/Land" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0">Landscapes</a>
-        </li>
-        <li>
-          <a href="/About" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0">About Me</a>
-        </li>
 
-      </ul>
+        </button>
+      </div>
+
+      <div v-bind:class="{ 'hidden': !showMenu, 'flex': showMenu }" class="lg:flex items-center">
+        <ul class="flex flex-col lg:flex-row list-none ml-auto">
+          <li class="nav-item">
+            <a href="/" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0"><span class="ml-2">Birds</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="/Land" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0"><span class="ml-2">Landscapes</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="/Poetry" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0"><span class="ml-2">Poetry</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="/About" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0"><span class="ml-2">About Me</span></a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 </template>
 
 
 <script>
-// set the target element that will be collapsed or expanded (eg. navbar menu)
-const targetEl = document.getElementById('navbar-default');
-
-// optionally set a trigger element (eg. a button, hamburger icon)
-const triggerEl = document.getElementById('nav-button');
-
-// optional options with default values and callback functions
-const options = {
-  triggerEl: triggerEl,
-  onCollapse: () => {
-      console.log('element has been collapsed')
-  },
-  onExpand: () => {
-      console.log('element has been expanded')
-  },
-  onToggle: () => {
-      console.log('element has been toggled')
-  }
-};
 export default {
-
-  props: {
-
+  name: "pink-navbar",
+  data() {
+    return {
+      showMenu: false
+    }
+  },
+  methods: {
+    toggleNavbar: function () {
+      this.showMenu = !this.showMenu;
+    }
   }
-};
+}
 </script>
 
 <style >
-
 </style>

@@ -3,10 +3,11 @@
 
 // Changes here requires a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
+const tailwindcss = require("tailwindcss");
 
 module.exports = {
   siteName: "Los.org",
-  siteDescription: "Art by Tony Kirman",
+  siteDescription: "Art etc. by Tony Kirman",
   siteUrl: process.env.SITE_URL,
   pathPrefix: process.env.PATH_PREFIX,
 
@@ -47,7 +48,17 @@ module.exports = {
       */
     }
   ],
-
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: [
+          tailwindcss
+          // No longer needed as of Tailwind 1.4.0
+          // ...process.env.NODE_ENV === "production" ? [purgecss] : []
+        ],
+      },
+    },
+  },
   transformers: {
     // add markdown support to all file-system sources
     remark: {

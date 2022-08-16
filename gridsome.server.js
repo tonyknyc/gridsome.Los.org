@@ -24,7 +24,7 @@ module.exports = function (api) {
         page: 1,
         format: 'json',
         nojsoncallback: 1,
-        per_page: 30,
+        per_page: 100,
       }
     }).then((response) => {
 
@@ -65,6 +65,14 @@ module.exports = function (api) {
       component: './src/templates/AlbumPage.vue',
       context: {
           imageTag: 'spiritland'
+      }
+    })
+
+    createPage({
+      path: `/Poetry`,
+      component: './src/templates/AlbumPage.vue',
+      context: {
+          imageTag: 'spirittext'
       }
     })
   })
