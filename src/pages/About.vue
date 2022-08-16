@@ -28,7 +28,7 @@
         Natural Rag and the landscape photographs are on Moab Estrada Bright Rag. I color-grade and print everything
         myself. I also hope to have some original oil paintings and woodblock prints available this year.</p>
 
-      <div class="flex justify-between">
+      <div class="md:flex md:justify-between">
         <div class="flex inline-block mr-4 py-2">
           <g-image src="../assets/images/email.png" width="50" class="mr-5" />
           <span class="self-center text-white whitespace-nowrap">tony at Los.org</span>
