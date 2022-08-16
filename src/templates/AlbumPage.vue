@@ -37,38 +37,15 @@ import NavBar from "~/components/NavBar.vue";
 import { DASHBOARD } from "~/components/js/View.js";
 
 export default {
+
   components: {
     CardLayout,
     NavBar
   },
-  data: function() {
-    return {
-      view: DASHBOARD
-    };
-  },
   metaInfo() {
     return {
-      title: this.$page.metadata.siteName,
-      meta: [
-        {
-          name: "description",
-          content: this.$page.metadata.siteDescription
-        }
-      ]
+      title: this.$context.pageTitle
     };
-  },
-  created: function() {
-
-  },
-  mounted: function() {
-   
-  },
-  watch: {
-
-  },
-  beforeDestroy() {
-
-
   },
   computed: {
     computeCards: function() {

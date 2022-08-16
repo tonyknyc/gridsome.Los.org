@@ -56,7 +56,8 @@ module.exports = function (api) {
       path: `/`,
       component: './src/templates/AlbumPage.vue',
       context: {
-          imageTag: 'spiritbird'
+          imageTag: process.env.ALBUM_BIRD,
+          pageTitle: "Wild Birds"
       }
     })
 
@@ -64,23 +65,25 @@ module.exports = function (api) {
       path: `/land`,
       component: './src/templates/AlbumPage.vue',
       context: {
-          imageTag: 'spiritland'
-      }
+          imageTag: process.env.ALBUM_LAND,
+          pageTitle: "Cape Cod"
+     }
     })
 
     createPage({
       path: `/poetry`,
       component: './src/templates/AlbumPage.vue',
       context: {
-          imageTag: 'spirittext'
-      }
+          imageTag: process.env.ALBUM_POETRY,
+          pageTitle: "Poetry"
+        }
     })
 
     createPage({
       path: `/painting`,
       component: './src/templates/AlbumPage.vue',
       context: {
-          imageTag: 'spiritoil'
+          imageTag: process.env.ALBUM_PAINTING
       }
     })
   })

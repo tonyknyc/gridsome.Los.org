@@ -3,7 +3,7 @@
     <NavBar activeLink="spiritabout" />
     <div class="mr-5 md:mr-10">
       <g-image src="../assets/images/kay-pleinair.jpg" width="180" class="pr-5 float-left" />
-      <p class="pb-5"> My name is Tony Kirman and I been have living on Cape Cod since 2017, making photographs,
+      <p class="pb-5"> My name is Tony Kirman and I have been living on Cape Cod since 2017, making photographs,
         drawing, painting and writing. Being a
         city kid
         (London and then NYC) the experience of Nature was always optional so the birds and other wild
@@ -23,10 +23,10 @@
         Labor Day.
         If you are in the area please drop by with conversation and cash :) The Wild Bird art prints are made with
         charcoal, graphite, watercolor crayons and paint. They are available in limited editions of 15 and smaller
-        unlimited sizes. All are giclcee prints,
+        unlimited sizes. All are giclee prints,
         meaning the ink is pigment-based and the paper is archival and acid-free. The bird prints are on Moab Entrada
         Natural Rag and the landscape photographs are on Moab Estrada Bright Rag. I color-grade and print everything
-        myself. I also hope to have some original oil paintings and woodblock prints available this year.</p>
+        myself. I also hope  to have some original oil paintings and woodblock prints available this year.</p>
 
       <div class="md:flex md:justify-between">
         <div class="flex inline-block mr-4 py-2">

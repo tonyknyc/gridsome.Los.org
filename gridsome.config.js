@@ -9,7 +9,6 @@ module.exports = {
   siteName: "Los.org",
   siteDescription: "Art etc. by Tony Kirman",
   siteUrl: process.env.SITE_URL,
-  pathPrefix: process.env.PATH_PREFIX,
 
   icon: {
     favicon: {

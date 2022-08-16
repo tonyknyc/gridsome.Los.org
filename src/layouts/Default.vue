@@ -5,7 +5,7 @@
         <slot />
       </div>
     </transition>
-    <footer class="bg-gray-dark flex justify-center sticky bottom-0">
+    <footer class="bg-gray-dark flex justify-center sticky bottom-0 mt-10">
       <span class="text-gray text-sm">
         Copyright © {{ new Date().getFullYear() }} 
         Tony Kirman, built with <a href="//gridsome.org" target="_blank">Gridsome</a> & <a href="//tailwindcss.com/" target="_blank">Tailwindcss</a>
