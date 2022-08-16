@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <NavBar />
+    <NavBar :activeLink="$context.imageTag"/>
     <div class="bg-gray-dark md:masonry-2-col lg:masonry-3-col box-border mx-auto before:box-inherit after:box-inherit" >
     <div v-for="image in computeCards" :key="image.node.id">
       <CardLayout :painting="image.node" />

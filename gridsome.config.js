@@ -14,7 +14,7 @@ module.exports = {
   icon: {
     favicon: {
       src: "./src/assets/images/favicon.png",
-      sizes: [16, 32, 96],
+      sizes: [96],
     },
     touchicon: {
       src: "./src/assets/images/favicon.png",
@@ -24,13 +24,6 @@ module.exports = {
   },
 
   plugins: [
-    {
-      use: "@gridsome/source-filesystem",
-      options: {
-        baseDir: "./content",
-        path: "*.*",
-      },
-    },
     {
       use: "@gridsome/plugin-sitemap",
     },

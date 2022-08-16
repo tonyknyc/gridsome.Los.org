@@ -75,5 +75,13 @@ module.exports = function (api) {
           imageTag: 'spirittext'
       }
     })
+
+    createPage({
+      path: `/Painting`,
+      component: './src/templates/AlbumPage.vue',
+      context: {
+          imageTag: 'spiritoil'
+      }
+    })
   })
 }

@@ -1,8 +1,8 @@
 <template>
   <nav class="relative flex flex-wrap items-center justify-between px-2 py-3 bg-gray-dark mb-3">
-    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+    <div class="container px-4 flex flex-wrap  justify-between">
       <div class="w-full  flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
-        <div class="flex inline-block mr-4 py-2">
+        <div class="flex inline-block l-0 py-2">
           <g-image src="../assets/images/favicon.png" width="50" class="pr-5" />
           <span class="self-center text-xl text-white font-semibold whitespace-nowrap">Los.org</span>
         </div>
@@ -16,18 +16,21 @@
       </div>
 
       <div v-bind:class="{ 'hidden': !showMenu, 'flex': showMenu }" class="lg:flex items-center">
-        <ul class="flex flex-col lg:flex-row list-none ml-auto">
+        <ul id="navList" class="flex flex-col lg:flex-row list-none ml-auto">
           <li class="nav-item">
-            <a href="/" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0"><span class="ml-2">Birds</span></a>
+            <a href="/" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spiritbird'"><span class="ml-4 mr-4"> {{  }} Wild birds</span></a>
           </li>
           <li class="nav-item">
-            <a href="/Land" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0"><span class="ml-2">Landscapes</span></a>
+            <a href="/Land" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spiritland'"><span class="ml-4 mr-4">Cape Cod</span></a>
           </li>
           <li class="nav-item">
-            <a href="/Poetry" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0"><span class="ml-2">Poetry</span></a>
+            <a href="/Poetry" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spirittext'"><span class="ml-4 mr-4">Poetry</span></a>
           </li>
           <li class="nav-item">
-            <a href="/About" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0"><span class="ml-2">About Me</span></a>
+            <a href="/Painting" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spiritoil'"><span class="ml-4 mr-4">Paintings</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="/About" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spiritabout'"><span class="ml-4 mr-4">About Me</span></a>
           </li>
         </ul>
       </div>
@@ -39,7 +42,7 @@
 
 <script>
 export default {
-  name: "pink-navbar",
+  props: ['activeLink'],
   data() {
     return {
       showMenu: false
@@ -54,4 +57,7 @@ export default {
 </script>
 
 <style >
+  [aria-current] {
+    background-color: #777f;
+  }
 </style>
