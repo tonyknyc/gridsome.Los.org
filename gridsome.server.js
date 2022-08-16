@@ -61,7 +61,7 @@ module.exports = function (api) {
     })
 
     createPage({
-      path: `/Land`,
+      path: `/land`,
       component: './src/templates/AlbumPage.vue',
       context: {
           imageTag: 'spiritland'
@@ -69,7 +69,7 @@ module.exports = function (api) {
     })
 
     createPage({
-      path: `/Poetry`,
+      path: `/poetry`,
       component: './src/templates/AlbumPage.vue',
       context: {
           imageTag: 'spirittext'
@@ -77,7 +77,7 @@ module.exports = function (api) {
     })
 
     createPage({
-      path: `/Painting`,
+      path: `/painting`,
       component: './src/templates/AlbumPage.vue',
       context: {
           imageTag: 'spiritoil'

@@ -21,16 +21,16 @@
             <a href="/" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spiritbird'"><span class="ml-4 mr-4"> {{  }} Wild birds</span></a>
           </li>
           <li class="nav-item">
-            <a href="/Land" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spiritland'"><span class="ml-4 mr-4">Cape Cod</span></a>
+            <a href="/land" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spiritland'"><span class="ml-4 mr-4">Cape Cod</span></a>
           </li>
           <li class="nav-item">
-            <a href="/Poetry" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spirittext'"><span class="ml-4 mr-4">Poetry</span></a>
+            <a href="/poetry" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spirittext'"><span class="ml-4 mr-4">Poetry</span></a>
           </li>
           <li class="nav-item">
-            <a href="/Painting" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spiritoil'"><span class="ml-4 mr-4">Paintings</span></a>
+            <a href="/painting" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spiritoil'"><span class="ml-4 mr-4">Paintings</span></a>
           </li>
           <li class="nav-item">
-            <a href="/About" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spiritabout'"><span class="ml-4 mr-4">About Me</span></a>
+            <a href="/about" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spiritabout'"><span class="ml-4 mr-4">About Me</span></a>
           </li>
         </ul>
       </div>
