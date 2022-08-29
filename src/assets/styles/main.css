@@ -17,3 +17,12 @@
         }
     }
 }
+
+@layer components {
+    .VueCarousel-navigation-prev {
+            background: url('../images/chevron-prev.svg');        }
+    .VueCarousel-navigation-next {
+            background: url('../images/chevron-next.svg');
+        }
+
+      }
