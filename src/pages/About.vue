@@ -14,8 +14,8 @@
         censors of his
         day). It is also a flexible acronym, Lack of Space, Loss of Signal etc. My Wordpress site was recently hacked so
         I rebuilt using some spectacular free tech - Gridsome (Vue's answer to Gatsby/React) and Tailwindcss (see footer
-        for details). I have had the domain since 1995 - for a Web 1.0 experience visit <a
-          href="http://Los.org/indexn3.html" target="_blank" class="text-gray">my old site</a>.</p>
+        for links). I have had the domain since 1995 - for a Web 1.0 experience visit <a
+          href="http://Los.org/indexn3.html" target="_blank" class="text-gray">my old old site</a>.</p>
 
       <g-image src="../assets/images/shadow-selfie.jpg" width="200" class="pl-5 float-right" />
       <p class="pb-5"> In the summer I sell my art at the Artist Cottages in Orleans, MA and this year I will be there
