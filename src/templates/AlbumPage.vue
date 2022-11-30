@@ -18,13 +18,7 @@
           <div v-for="image in computeCards" 
                 :key="image.node.id" 
                 class="flex justify-center max-h-screen" >
-            <g-image :src="image.node.url_l" :alt="image.node.title" fit="outside" class="max-h-screen"  />
-            <button id="closeButton" @click="closeSlideshow" class="flex justify-left">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke="white" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
+            <g-image @click="closeSlideshow" :src="image.node.url_l" :alt="image.node.title" fit="outside" class="max-h-screen"  />
           </div>
         </VueSlickCarousel>
       </ClientOnly>
@@ -119,5 +113,9 @@ export default {
 <style>
 .slick-slide>div>div {
   display: inline-flex !important;
+}
+
+.slick-slide>div {
+  padding: 5px;
 }
 </style>
