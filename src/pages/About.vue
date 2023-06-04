@@ -25,7 +25,7 @@
         unlimited sizes. All are giclee prints,
         meaning the ink is pigment-based and the paper is archival and acid-free. The bird prints are on Moab Entrada
         Natural Rag and the landscape photographs are on Moab Estrada Bright Rag. I color-grade and print everything
-        myself. I also hope  to have some original oil paintings and woodblock prints available this year.</p>
+        myself. There will also be some original oil paintings and woodblock prints available this year.</p>
 
       <div class="md:flex md:justify-between">
         <div class="flex inline-block mr-4 py-2">

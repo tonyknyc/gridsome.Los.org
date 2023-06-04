@@ -18,19 +18,19 @@
       <div v-bind:class="{ 'hidden': !showMenu, 'flex': showMenu }" class="lg:flex items-center">
         <ul id="navList" class="flex flex-col lg:flex-row list-none ml-auto">
           <li class="nav-item">
-            <a href="/" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spiritbird'"><span class="ml-4 mr-4"> {{  }} Wild birds</span></a>
+            <g-link to="/" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spiritbird'"><span class="ml-4 mr-4"> {{  }} Wild birds</span></g-link>
           </li>
           <li class="nav-item">
-            <a href="/land" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spiritland'"><span class="ml-4 mr-4">Cape Cod</span></a>
+            <g-link to="/land" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spiritland'"><span class="ml-4 mr-4">Cape Cod</span></g-link>
           </li>
           <li class="nav-item">
-            <a href="/poetry" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spirittext'"><span class="ml-4 mr-4">Poetry</span></a>
+            <g-link to="/poetry" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spirittext'"><span class="ml-4 mr-4">Poetry</span></g-link>
           </li>
           <li class="nav-item">
-            <a href="/painting" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spiritoil'"><span class="ml-4 mr-4">Paintings</span></a>
+            <g-link to="/painting" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spiritoil'"><span class="ml-4 mr-4">Paintings</span></g-link>
           </li>
           <li class="nav-item">
-            <a href="/about" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spiritabout'"><span class="ml-4 mr-4">About Me</span></a>
+            <g-link to="/about" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0" :aria-current="activeLink == 'spiritabout'"><span class="ml-4 mr-4">About Me</span></g-link>
           </li>
         </ul>
       </div>
