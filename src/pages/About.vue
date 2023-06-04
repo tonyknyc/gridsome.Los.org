@@ -18,8 +18,8 @@
           href="http://Los.org/indexn3.html" target="_blank" class="text-gray">my old old site</a>.</p>
 
       <g-image src="../assets/images/shadow-selfie.jpg" width="200" class="pl-5 float-right" />
-      <p class="pb-5"> In the summer I sell my art at the Artist Cottages in Orleans, MA and this year I will be there
-        July 19-30 and August 23 to September 4.
+      <p class="pb-5"> In the summer I sell my art at the Artist Cottages in Orleans, MA and this year <span class="text-orange">2023</span> I will be there
+        <span class="text-orange">July 19-30</span> and  <span class="text-orange">August 23 to September 4</span>.
         If you are in the area please drop by with conversation and cash :) The Wild Bird art prints are made with
         charcoal, graphite, watercolor crayons and paint. They are available in limited editions of 15 and smaller
         unlimited sizes. All are giclee prints,

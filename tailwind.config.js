@@ -18,7 +18,8 @@ module.exports = {
     textColor: {
       white: "#FFF", 
       gray: "#888", 
-      black: "#000"
+      black: "#000",
+      orange: '#ff7849'
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
