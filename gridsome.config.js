@@ -9,7 +9,7 @@ module.exports = {
   siteName: "Los.org",
   siteDescription: "Art etc. by Tony Kirman",
   siteUrl: process.env.SITE_URL,
-
+  pathPrefix: process.env.GITHUB_REPPREFIX,
   icon: {
     favicon: {
       src: "./src/assets/images/favicon.png",
