@@ -19,8 +19,7 @@
 
       <g-image src="../assets/images/shadow-selfie.jpg" width="200" class="pl-5 float-right" />
       <p class="pb-5"> In the summer I sell my art at the Artist Cottages in Orleans, MA and this year I will be there
-        Aug 24 through
-        Labor Day.
+        July 19-30 and August 23 to September 4.
         If you are in the area please drop by with conversation and cash :) The Wild Bird art prints are made with
         charcoal, graphite, watercolor crayons and paint. They are available in limited editions of 15 and smaller
         unlimited sizes. All are giclee prints,
