@@ -87,7 +87,7 @@ export default {
       this.slidesOn = false;
       this.slideIdx = 0;
       this.isDesktop = !isMobileOnly
-      console.log('devive isMobile :: ' + isMobile)
+      // console.log('devive isMobile :: ' + isMobile)
     })
   },
   computed: {
